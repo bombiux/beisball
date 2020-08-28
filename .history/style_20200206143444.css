@@ -1,0 +1,49 @@
+/*!
+Theme Name: Selección de Baseball Nicaragua
+Theme URI: http://selebeisbolnic.com.ni/
+Author: Sirope Media
+Author URI: https://siropemedia.com/
+Description: Tema oficial del sitio web de la Selección Nacional de Baseball de Nicaragua
+Version: 1.0.0
+Text Domain: selebeisbolnic
+Tags: Selección, Baseball, Nicaragua
+*/
+
+:root {
+  /* Fuentes */
+  --fuentePrimaria: 'Source Sans Pro', 'Courier New', Courier, monospace;
+  --fuenteTexto: sans-serif, 'Courier New', Courier, monospace;
+  --Monoespacio: 'Courier New', Courier, monospace;
+
+  /* Colores */
+  --principal: #222c5eff;
+  --amarillo: #111327ff;
+  --celeste: #4678c5ff;
+  --blanco: #e82234ff;
+  --negro: 0,0,0;
+  --gris: rgb(248,248,248);
+  --grisMedio: #dfdfdf;
+  --grisOscuro: 32,32,32;
+  --transparente: transparent;
+  
+}
+
+* {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+::selection {
+  color: rgb(var(--blanco));
+  background: rgb(var(--principal));
+}
+
+body {
+    font-family: var(--fuenteTexto);
+    background-color: var(--gris);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuentePrimaria);
+}

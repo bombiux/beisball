@@ -1,0 +1,119 @@
+/*!
+Theme Name: Selección de Baseball Nicaragua
+Theme URI: http://selebeisbolnic.com.ni/
+Author: Sirope Media
+Author URI: https://siropemedia.com/
+Description: Tema oficial del sitio web de la Selección Nacional de Baseball de Nicaragua
+Version: 1.0.0
+Text Domain: selebeisbolnic
+Tags: Selección, Baseball, Nicaragua
+*/
+
+@font-face {
+  font-family: TwCen;
+  src: url('fonts/TwCenMT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TwBold;
+  src: url('fonts/TwCenMT-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+@font-face {
+  font-family: Classified;
+  src: url('fonts/TwCenClassMTStd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url('fonts/DINCond-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+
+  /* Colores */
+  --main: #222c5e;
+  --dark: #111327;
+  --lite: #4678c5;
+  --crim: #e82234;
+  --blk: #000;
+  --wht: #fff;
+  --trns: transparent;
+  
+}
+
+* {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+::selection {
+  color: rgb(var(--blanco));
+  background: rgb(var(--principal));
+}
+
+body {
+    font-family: var(--fuenteTexto);
+    background-color: var(--gris);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: TwCen;
+}
+
+.slicknav_menu {
+  padding: .5rem;
+}
+
+.slicknav-flex {
+  position: relative;
+  justify-content: center;
+}
+
+.slicknav_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  height: 100%;
+}
+
+.slicknav_brand {
+  height: auto;
+}
+
+.slicknav_brand img {
+  height: 10vh;
+  width: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.5));
+  -moz-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.5));
+  -ms-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.5));
+  -o-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.5));
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.5));
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  width: 2.5rem;
+  height: 0.3rem;
+}
+
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+  margin-top: 1rem;
+}
+
+.slicknav_nav li, .slicknav_nav ul {
+  display: flex;
+}
+
+.menu a {
+  font-family: TwCen;
+}

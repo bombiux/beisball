@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: local('Tw Cen MT'), local('TwCenMT-Regular'),
+        url('TwCenMT.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    src: url('TwCenMT-Bold.woff2') format('woff2');
+    font-weight: bold;
+   }
+
+@font-face {
+    font-family: 'Tw Cen Classified MT Std';
+    src: url('TwCenClassMTStd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DIN Condensed';
+    src: url('DINCond-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}

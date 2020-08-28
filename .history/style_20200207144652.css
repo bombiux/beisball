@@ -1,0 +1,170 @@
+/*!
+Theme Name: Selección de Baseball Nicaragua
+Theme URI: http://selebeisbolnic.com.ni/
+Author: Sirope Media
+Author URI: https://siropemedia.com/
+Description: Tema oficial del sitio web de la Selección Nacional de Baseball de Nicaragua
+Version: 1.0.0
+Text Domain: selebeisbolnic
+Tags: Selección, Baseball, Nicaragua
+*/
+
+@font-face {
+  font-family: TwCen;
+  src: url('fonts/TwCenMT.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: TwBold;
+  src: url('fonts/TwCenMT-Bold.woff2') format('woff2');
+ }
+
+@font-face {
+  font-family: Classified;
+  src: url('fonts/TwCenClassMTStd.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: DIN;
+  src: url('fonts/DINCond-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Tertre;
+  src: url('fonts/Tertre.woff2') format('woff2');
+}
+
+:root {
+
+  /* Colores */
+  --main: #222c5e;
+  --dark: #141a33;
+  --lite: #4678c5;
+  --crim: #e82234;
+  --trns: transparent;
+  
+}
+
+* {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+::selection {
+  color: rgb(var(--blanco));
+  background: rgb(var(--principal));
+}
+
+body {
+    font-family: var(--fuenteTexto);
+    background-color: var(--gris);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: TwCen;
+}
+
+.site-branding, #nav-container {
+  display: none;
+}
+
+.live-stats {
+  position: fixed;
+  right: 0;
+  margin-top: 100vw;
+  background-color: var(--dark);
+  padding:2rem 4rem;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 10px #000000bf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.live-stats p {
+  color: white;
+  font-family: TwCen;
+  line-height: 1.2;
+}
+
+.live-stats .head span {
+  font-size: 3rem;
+  font-family: Tertre;
+}
+
+.live-stats .head::after {
+  content: 'live';
+  position: absolute;
+  color: white;
+  background-color: var(--crim);
+  font-family: TwCen;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: .5rem;
+  border-radius: ;
+}
+
+.live-stats .footer span {
+  border: .5px solid #ffffffbf;
+  border-radius: 5px;
+  padding: 0 .5rem;
+}
+.slicknav_menu {
+  padding: 0;
+}
+
+.slicknav-flex {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.slicknav_btn {
+  padding: 3rem;
+  height: 100%;
+}
+
+.slicknav_brand {
+  height: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.slicknav_brand img {
+  height: 10vh;
+  width: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #00000080);
+  -moz-filter: drop-shadow(5px 5px 5px #00000080);
+  -ms-filter: drop-shadow(5px 5px 5px #00000080);
+  -o-filter: drop-shadow(5px 5px 5px #00000080);
+  filter: drop-shadow(5px 5px 5px #00000080);
+  padding-top: .5rem;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  width: 2.5rem;
+  height: 0.3rem;
+}
+
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+  margin-top: 1rem;
+}
+
+.slicknav_nav ul {
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+.slicknav_nav li:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.slicknav_nav li a {
+  font-family: TwCen;
+  padding: 1rem 1rem;
+  margin: 0;
+}
